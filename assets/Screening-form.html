@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/form-style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./resp.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Clinic</title>
+  </head>
+  <body>
+    <!--Header start-->
+    <nav class="navbar navbar-expand-lg container">
+        <span><a href="./index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmqAGrWOfwHslIqtr_2u6kurGV1m2WRsAOkQ&usqp=CAU" alt=""></a></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa fa-bars"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="form-inline my-2 my-lg-0 header-content">
+           <a href="">Covid Screening</a>
+           <a href="">Contact</a>
+          </div>
+        </div>
+      </nav>
+    <!--Header ends--->
+
+    <!---Form start-->
+    <form class="container" method="POST" action="./db/db.php">
+        <h3 style="text-align: center;">Welcome to Souffle Clinic Health’s Covid-19 Symptom Screening</h3>  
+
+        <p style="text-align: center;">This Screening Tool is offered for informational purposes to help you check for COVID-19 symptoms as outlined by the Centers for Disease Control. The guidance you receive depends on the accuracy of the information you provide as well as current guidelines for identifying symptoms associated with COVID-19. Based on your self-reported answers, the tool will provide a response to be used by your employer. Please take the survey and provide the response to your employer according to your employer’s instructions.
+
+          This is not a substitute for professional medical advice, diagnosis, or treatment of disease or other conditions, including COVID-19. Always consult a medical professional for serious symptoms or emergencies.
+          
+          </p>
+        
+        <div class="form-group group mt-5">
+            <label >Have you had any signs or symptoms of a fever in the past 24 hours such as chills, sweats, felt "feverish" or had a temperature that is elevated for you/100.0F or greater?</label>
+            <div>
+                <input id="yes" type="radio" value="yes" name="temperature">
+                <label for="yes">Yes</label>
+            
+                <input id="no" type="radio" value="no" name="temperature">
+                <label for="no">No</label>
+    
+             </div>
+        </div>
+    
+        <div class="form-group group">
+            <label>Do you have any of the following symptoms? </label>
+            <ul>
+                <li>Cough</li>
+                <li>Shortness of Breath or Chest Tightness</li>
+                <li>Sore Throat</li>
+                <li>Nasal Congestion/Runny Nose</li>
+                <li>Myalgia (Body Aches)</li>
+                <li>Loss of Taste and/or Smell</li>
+                <li>Diarrhea</li>
+                <li>Nausea</li>
+                <li>Vomiting</li>
+                <li>Fever/Chills/Sweats</li>
+            </ul>
+            <div>
+                <input id="yes" type="radio" value="yes" name="symptoms">
+                <label for="yes">Yes</label>
+            
+                <input id="no" type="radio" value="no" name="symptoms">
+                <label for="no">No</label>
+             </div>
+        </div>
+    
+        <div class="form-group group">
+            <label>Have you traveled internationally or outside of state in the last 14 days? Or, have you had any close contact in the last 14 days with someone with a diagnosis of COVID-19?</label>
+            <div>
+                <input id="yes" type="radio" value="yes" name="travel">
+                <label for="yes">Yes</label>
+        
+                <input id="no" type="radio" value="no" name="travel">
+                <label for="no">No</label>
+             </div>
+        </div>
+    
+        <button class="btn btn-success" name="insert">Submit</button>
+    </form>
+    <!--Form ends-->
+
+    <!--footer start-->
+    <footer class="footer-distributed container">
+        <div class="footer-right">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p>Company Name &copy; 2015</p>
+        </div>
+    </footer>
+    <!--footer ends-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

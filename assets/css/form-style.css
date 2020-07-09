@@ -1,0 +1,23 @@
+input{
+    margin: 10px;
+}
+
+.group{
+    margin: 20px 0px;
+}
+
+.group>ul{
+    margin-left: 20px;
+}
+
+label, ul>li, h3{
+    font-weight: 300;
+}
+
+form{
+    margin: 50px 0px;
+}
+
+#declaration{
+    text-align: center!important;
+}
